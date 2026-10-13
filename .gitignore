@@ -1,0 +1,23 @@
+# ---- Android / Gradle 构建产物 ----
+build/
+.gradle/
+local.properties
+*.iml
+.idea/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# ---- 系统文件 ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- 二进制产物与逆向工具链 ----
+# 原始 APK 与 jadx/apktool 工具链体积较大（约 400MB）且可重新获取，未入库。
+# 复现方法见 docs/06-重建与重启指南.md
+*.apk
+*.aab
+*.ap_
+*.dex
+*.jar

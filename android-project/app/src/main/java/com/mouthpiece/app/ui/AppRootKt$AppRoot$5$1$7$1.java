@@ -1,0 +1,30 @@
+package com.mouthpiece.app.ui;
+
+import com.mouthpiece.app.domain.Scene;
+import com.mouthpiece.app.vm.MainViewModel;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.FunctionReferenceImpl;
+import kotlin.jvm.internal.Intrinsics;
+
+/* JADX INFO: compiled from: AppRoot.kt */
+/* JADX INFO: loaded from: classes3.dex */
+@Metadata(k = 3, mv = {2, 1, 0}, xi = 48)
+/* synthetic */ class AppRootKt$AppRoot$5$1$7$1 extends FunctionReferenceImpl implements Function1<Scene, Unit> {
+    AppRootKt$AppRoot$5$1$7$1(Object obj) {
+        super(1, obj, MainViewModel.class, "onSceneChange", "onSceneChange(Lcom/mouthpiece/app/domain/Scene;)V", 0);
+    }
+
+    @Override // kotlin.jvm.functions.Function1
+    public /* bridge */ /* synthetic */ Unit invoke(Scene scene) {
+        invoke2(scene);
+        return Unit.INSTANCE;
+    }
+
+    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+    public final void invoke2(Scene p0) {
+        Intrinsics.checkNotNullParameter(p0, "p0");
+        ((MainViewModel) this.receiver).onSceneChange(p0);
+    }
+}
